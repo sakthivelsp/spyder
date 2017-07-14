@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a href="home.html" class="navbar-brand">
+                    <img src="spyder.png" width="130" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="profile">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="list-ggroup">
+                        <li class="list-ggroup-item">
+                            <span>Invisible</span>
+                            <input type="checkbox" data-toggle="toggle">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .profile ul {padding:0;}
+        .profile ul li {list-style:none;padding:15px 0;}        
+        .profile ul li .toggle {float: right;margin-top: -7px;}
+
+        .list-group .toggle { float: right; margin: -7px; }
+    </style>
+</body>
+</html>
