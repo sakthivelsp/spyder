@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="profile.html">Profile</a></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="home.html">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-primary active">
                     <input type="radio" name="options" id="rdoUsers" checked>
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i>
                 </label>
                 <label class="btn btn-primary">
                     <input type="radio" name="options" id="rdoGroups">
@@ -47,8 +47,8 @@
                     <div class="list-group">
                         <a class="list-group-item" href="map.html">
                             <img class="user-icon" src="rajnikanth.jpg" />Sakthi</a>
-                        <a class="list-group-item" href="map.html">
-                            <img class="user-icon" src="anonymous.jpg" />Raja</a>
+                        <a class="list-group-item disabled" href="map.html">
+                            <img class="user-icon" src="Friends/anonymous.jpg" />Raja <i class="fa fa-eye-slash" aria-hidden="true"></i></a>
                         <a class="list-group-item" href="map.html">
                             <img class="user-icon" src="anonymous.jpg" />Shiva</a>
                         <a class="list-group-item" href="map.html">
@@ -110,8 +110,13 @@
         }
 
         .fixed-height {
-            max-height: 320px;
+            max-height: 360px;
             overflow-y: scroll;
+        }
+
+        .list-group-item i {
+            float: right;
+            margin-top: 7px;
         }
 
         .user-icon {
@@ -124,16 +129,20 @@
             background-size: cover;
             margin-right: 6px;
         }
+
+        div.user-list {
+            left: 1250px;
+        }
     </style>
     <script>
         $(document).ready(function () {
             $("#rdoUsers").parent().click(function () {
                 $("div.group-list").hide();
-                $("div.user-list").toggle("slide");
+                $("div.user-list").show();
             });
             $("#rdoGroups").parent().click(function () {
                 $("div.user-list").hide();
-                $("div.group-list").toggle("slide");
+                $("div.group-list").show();
             });
         });
     </script>
